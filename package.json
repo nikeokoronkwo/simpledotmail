@@ -1,0 +1,25 @@
+{
+  "name": "simple-mail-workspace",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
+    "check-types": "turbo run check-types",
+    "test:projects": "vitest run",
+    "test:projects:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "@simple.mail/vitest-config": "workspace:*",
+    "prettier": "^3.8.1",
+    "turbo": "^2.8.7",
+    "typescript": "5.9.2",
+    "tsx": "^4.21.0",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
+}

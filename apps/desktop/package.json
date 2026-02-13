@@ -1,0 +1,28 @@
+{
+  "name": "@simple.mail/desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "dependencies": {
+    "@simple.mail/mobile": "workspace:*",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "^4.6.0",
+    "typescript": "catalog:",
+    "vite": "^7.0.4",
+    "@tauri-apps/cli": "^2",
+    "@simple.mail/eslint-config": "workspace:*",
+    "@simple.mail/typescript-config": "workspace:*",
+    "@simple.mail/vitest-config": "workspace:*"
+  }
+}

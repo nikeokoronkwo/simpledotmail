@@ -1,0 +1,40 @@
+{
+  "name": "@simple.mail/tui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "tui": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./render": {
+      "types": "./dist/render.d.ts",
+      "default": "./dist/render.js"
+    },
+    "./App": {
+      "types": "./dist/App.d.ts",
+      "default": "./dist/App.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsx cli.tsx",
+    "build": "tsc",
+    "test": "echo 'Add test script here'",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@simple.mail/eslint-config": "workspace:*",
+    "@simple.mail/typescript-config": "workspace:*",
+    "@simple.mail/vitest-config": "workspace:*",
+    "@types/node": "^22.14.0",
+    "tsx": "^4.19.0"
+  },
+  "dependencies": {
+    "ink": "^6.7.0",
+    "react": "catalog:"
+  }
+}
