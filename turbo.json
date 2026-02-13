@@ -5,7 +5,7 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "bin/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**", "bin/**", "dist/**", "src-tauri/target/release/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]

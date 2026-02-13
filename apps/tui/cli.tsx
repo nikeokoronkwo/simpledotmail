@@ -48,7 +48,7 @@ function parseArgs(): ParsedArgs {
 				break;
 			}
 			default:
-				if (arg.startsWith('-')) {
+				if (arg?.startsWith('-')) {
 					console.error(`Error: Unknown option ${arg}`);
 					process.exit(1);
 				}

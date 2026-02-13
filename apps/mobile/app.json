@@ -26,7 +26,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "static", // todo: will change in future
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [

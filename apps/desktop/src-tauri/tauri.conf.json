@@ -7,7 +7,7 @@
     "beforeDevCommand": "cd ../mobile && pnpm web",
     "devUrl": "http://localhost:8082",
     "beforeBuildCommand": "cd ../mobile && pnpm build",
-    "frontendDist": "../../.expo/dist"
+    "frontendDist": "../../mobile/dist"
   },
   "app": {
     "windows": [
