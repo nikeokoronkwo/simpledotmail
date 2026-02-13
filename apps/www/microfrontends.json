@@ -1,0 +1,36 @@
+{
+  "$schema": "https://turborepo.dev/microfrontends/schema.json",
+  "applications": {
+    "simple.mail": {
+      "development": {
+        "local": {
+          "port": 3000
+        }
+      }
+    },
+    "@simple.mail/mobile": {
+      "development": {
+        "local": {
+          "port": 8081
+        }
+      },
+      "routing": [
+        {
+          "paths": ["/app", "/app/:path*"]
+        }
+      ]
+    },
+    "@simple.mail/docs": {
+      "development": {
+        "local": {
+          "port": 3001
+        }
+      },
+      "routing": [
+        {
+          "paths": ["/docs", "/docs/:path*"]
+        }
+      ]
+    }
+  }
+}

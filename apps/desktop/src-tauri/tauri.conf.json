@@ -5,7 +5,7 @@
   "identifier": "com.nuge.simpledotmail",
   "build": {
     "beforeDevCommand": "cd ../mobile && pnpm web",
-    "devUrl": "http://localhost:8081",
+    "devUrl": "http://localhost:8082",
     "beforeBuildCommand": "cd ../mobile && pnpm build",
     "frontendDist": "../../.expo/dist"
   },

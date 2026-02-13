@@ -1,0 +1,7 @@
+{
+    "extends": "@simple.mail/typescript-config/base",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src"
+    }
+}

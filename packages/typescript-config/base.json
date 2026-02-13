@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022",
-    "allowArbitraryExtensions": true,
-    "verbatimModuleSyntax": true
-  }
+    "allowArbitraryExtensions": true
+  },
+  "exclude": [
+      "dist",
+      "node_modules"
+  ]
 }
