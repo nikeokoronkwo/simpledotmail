@@ -17,4 +17,6 @@ We wanted to make an email client that felt more natural to use for developers a
 - [Tauri](https://tauri.app) (desktop)
 - [Convex](https://www.convex.dev) (backend)
 
-## Getting Started
+## Contributing
+
+For more information, see [contributing guidelines](/CONTRIBUTING.md)

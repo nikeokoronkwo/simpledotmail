@@ -47,7 +47,7 @@ Ensure all code written for the TUI is actionable without the use of a mouse (si
 
 ### Mobile e2e
 
-Mobile end-to-end testing is done using [Maestro](https://docs.maestro.dev). In order to run such tests locally, the expo application needs to be actively running on the user's system
+Mobile end-to-end testing is done using [Maestro](https://maestro.dev). In order to run such tests locally, the expo application needs to be actively running on the user's system
 
 > In the future, we should integrate with EAS
 
