@@ -1,0 +1,3 @@
+vars:
+- CLI_EXECUTABLE
+- CLI_EXEC_ARGS

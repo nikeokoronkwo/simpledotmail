@@ -9,7 +9,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web --port 8082",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -33,9 +35,14 @@
     "react-native-worklets": "0.5.1"
   },
   "devDependencies": {
+    "@simple.mail/eslint-config": "workspace:*",
+    "@simple.mail/typescript-config": "workspace:*",
+    "@simple.mail/vitest-config": "workspace:*",
+    "@testing-library/react-native": "^13.3.3",
     "@types/react": "~19.1.0",
     "eslint": "^10.0.0",
     "eslint-config-expo": "~10.0.0",
+    "eslint-plugin-testing-library": "^7.15.4",
     "react-test-renderer": "19.1.0",
     "typescript": "catalog:"
   },

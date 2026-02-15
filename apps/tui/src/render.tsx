@@ -1,6 +1,6 @@
-import React from 'react';
-import {render as inkRender, type RenderOptions} from 'ink';
-import App from './App.js';
+import React from "react";
+import { render as inkRender, type RenderOptions } from "ink";
+import App from "./App.js";
 
 export interface TuiRenderOptions {
 	/** stdout stream (default: process.stdout) */
@@ -27,7 +27,9 @@ export interface TuiRenderOptions {
  * Renders the TUI application with customizable options.
  * This function can be used both as a CLI tool and as an SSH server component.
  */
-export function renderTui(options: TuiRenderOptions = {}): ReturnType<typeof inkRender> {
+export function renderTui(
+	options: TuiRenderOptions = {},
+): ReturnType<typeof inkRender> {
 	const {
 		stdout = process.stdout,
 		stdin = process.stdin,

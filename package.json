@@ -7,7 +7,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
     "check-types": "turbo run check-types",
-    "test:projects": "vitest run",
+    "test": "turbo run test",
+    "test:projects": "vitest",
     "test:projects:watch": "vitest --watch"
   },
   "devDependencies": {

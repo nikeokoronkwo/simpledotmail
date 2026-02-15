@@ -20,6 +20,9 @@
     "test": {
       "dependsOn": ["^test", "@simple.mail/vitest-config#build"]
     },
+    "coverage": {
+      "dependsOn": ["^coverage", "@simple.mail/vitest-config#build"]
+    },
     "test:watch": {
       "cache": false,
       "persistent": true

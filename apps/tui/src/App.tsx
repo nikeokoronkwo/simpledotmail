@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Text} from 'ink';
+import React, { useState, useEffect } from "react";
+import { Text } from "ink";
 
 export interface AppProps {
 	/** Initial counter value */
@@ -8,12 +8,12 @@ export interface AppProps {
 	[key: string]: unknown;
 }
 
-const App = ({initialCounter = 0}: AppProps) => {
+const App = ({ initialCounter = 0 }: AppProps) => {
 	const [counter, setCounter] = useState(initialCounter);
 
 	useEffect(() => {
 		const timer = setInterval(() => {
-			setCounter(previousCounter => previousCounter + 1);
+			setCounter((previousCounter) => previousCounter + 1);
 		}, 100);
 
 		return () => {

@@ -8,19 +8,21 @@
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit",
-    "build": "bun build main.ts --compile --outfile dist/smc"
+    "build": "bun build main.ts --compile --outfile dist/smc",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.28.2",
   "dependencies": {
-    "commander": "^14.0.3",
-    "@simple.mail/tui": "workspace:*"
+    "@simple.mail/tui": "workspace:*",
+    "commander": "^14.0.3"
   },
   "devDependencies": {
     "@simple.mail/eslint-config": "workspace:*",
     "@simple.mail/typescript-config": "workspace:*",
-    "@simple.mail/vitest-config": "workspace:*"
+    "@simple.mail/vitest-config": "workspace:*",
+    "vitest": "catalog:"
   }
 }

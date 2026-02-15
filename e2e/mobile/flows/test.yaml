@@ -1,0 +1,6 @@
+appId: com.nuge.simpledotmail
+---
+- launchApp:
+    clearState: true
+
+- assertVisible: "Hello"

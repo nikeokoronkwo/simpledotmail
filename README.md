@@ -2,15 +2,11 @@
 
 ## What we use?
 
-- [React]()
-- [React Native]()
-- [Next.js]() (web application)
-- [Ink]() (tui)
-- [Tauri]() (desktop)
-- [Convex]() (backend)
-
-Using these tools all
+- [React](https://react.dev/)
+- [React Native]https://reactnative.dev)
+- [Next.js](https://nextjs.org) (web application)
+- [Ink](https://term.ink/) (tui)
+- [Tauri](https://tauri.app) (desktop)
+- [Convex](https://www.convex.dev) (backend)
 
 ## Getting Started
-
-You will need to have Bun installed in order to

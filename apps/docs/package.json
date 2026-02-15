@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
-    "check-types": "next typegen && tsc --noEmit"
+    "check-types": "next typegen && tsc --noEmit",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "next": "catalog:",
@@ -20,6 +22,15 @@
     "@simple.mail/typescript-config": "workspace:*",
     "@simple.mail/vitest-config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^5.1.4",
+    "@vitest/browser-playwright": "^4.0.18",
+    "@vitest/coverage-v8": "catalog:",
+    "jsdom": "^28.1.0",
+    "tailwindcss": "^4.1.18",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "catalog:",
+    "vitest-browser-react": "^2.0.5"
   }
 }

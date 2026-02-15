@@ -1,0 +1,21 @@
+{
+  "name": "@simple.mail/e2e-server",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "convex-helpers": "^0.1.112",
+    "node-pty": "^1.1.0",
+    "vitest": "catalog:"
+  },
+  "devDependencies": {
+    "@simple.mail/vitest-config": "workspace:*",
+    "@vitest/coverage-v8": "catalog:"
+  }
+}

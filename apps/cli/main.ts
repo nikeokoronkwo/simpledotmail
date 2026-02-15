@@ -1,9 +1,6 @@
-import { program } from 'commander';
+import { program } from "commander";
 
-program
-  .option('--first')
-  .option('-s, --separator <char>')
-  .argument('<string>');
+program.option("--first").option("-s, --separator <char>").argument("<string>");
 
 program.parse();
 

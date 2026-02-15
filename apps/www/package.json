@@ -6,7 +6,9 @@
     "dev": "next dev --port $(turbo get-mfe-port)",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "next": "catalog:",
@@ -18,13 +20,22 @@
     "@simple.mail/typescript-config": "workspace:*",
     "@simple.mail/vitest-config": "workspace:*",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/browser-playwright": "^4.0.18",
+    "@vitest/coverage-v8": "catalog:",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "jsdom": "^28.1.0",
     "tailwindcss": "^4",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "catalog:",
+    "vitest-browser-react": "^2.0.5"
   }
 }

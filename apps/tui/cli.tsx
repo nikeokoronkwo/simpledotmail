@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import React from 'react';
-import {renderTui} from './src/render.js';
+import React from "react";
+import { renderTui } from "./src/render.js";
 
 interface ParsedArgs {
 	/** Initial counter value */
@@ -26,19 +26,19 @@ function parseArgs(): ParsedArgs {
 		const arg = args[i];
 
 		switch (arg) {
-			case '--help':
-			case '-h':
+			case "--help":
+			case "-h":
 				parsed.help = true;
 				break;
-			case '--debug':
-			case '-d':
+			case "--debug":
+			case "-d":
 				parsed.debug = true;
 				break;
-			case '--no-exit-on-ctrl-c':
+			case "--no-exit-on-ctrl-c":
 				parsed.noExitOnCtrlC = true;
 				break;
-			case '--initial-counter':
-			case '-c': {
+			case "--initial-counter":
+			case "-c": {
 				const value = args[++i];
 				if (value === undefined || Number.isNaN(Number(value))) {
 					console.error(`Error: --initial-counter requires a numeric value`);
@@ -48,7 +48,7 @@ function parseArgs(): ParsedArgs {
 				break;
 			}
 			default:
-				if (arg?.startsWith('-')) {
+				if (arg?.startsWith("-")) {
 					console.error(`Error: Unknown option ${arg}`);
 					process.exit(1);
 				}
