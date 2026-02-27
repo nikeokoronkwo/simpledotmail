@@ -10,4 +10,5 @@ WORKDIR /app
 COPY . .
 RUN pnpm install
 
+
 CMD ["turbo", "run", "dev", "--filter=my-app"]
