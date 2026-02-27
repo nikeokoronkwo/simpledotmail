@@ -1,8 +1,16 @@
 services:
-  # maildev:
+  maildev:
+      build: .
+      ports:
+        - "3000:3000"
+      environment:
+          - CONVEX_URL=http://convex-backend:3210
+          - NODE_ENV=development
+      depends_on:
+        convex-backend:
+          condition: service_healthy
 
   convex-backend:
-  # Change this to :${REV} if you want to pin to a specific version
     image: ghcr.io/get-convex/convex-backend:latest
     stop_grace_period: 10s
     stop_signal: SIGINT
@@ -48,7 +56,6 @@ services:
       start_period: 10s
 
   convex-dashboard:
-    # Change this to :${REV} if you want to pin to a specific version
     image: ghcr.io/get-convex/convex-dashboard:latest
     stop_grace_period: 10s
     stop_signal: SIGINT
@@ -58,5 +65,7 @@ services:
       - NEXT_PUBLIC_DEPLOYMENT_URL=${NEXT_PUBLIC_DEPLOYMENT_URL:-http://127.0.0.1:${PORT:-3210}}
       - NEXT_PUBLIC_LOAD_MONACO_INTERNALLY
     depends_on:
-      backend:
+      convex-backend:
         condition: service_healthy
+volumes:
+  data:
