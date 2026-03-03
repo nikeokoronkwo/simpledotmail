@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "convex dev",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
