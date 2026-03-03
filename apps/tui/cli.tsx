@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import React from "react";
+import "dotenv/config";
 import { renderTui } from "./src/render.js";
 
 interface ParsedArgs {

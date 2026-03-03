@@ -2,11 +2,14 @@ import { StyleSheet } from "react-native";
 
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
+import { api } from "@simple.mail/server/convex/_generated/api.js";
+import { useQuery } from "convex/react";
 
 export default function TabOneScreen() {
+	const hello = useQuery(api.tasks.sayHello, { name: "Mobile" });
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Tab One</Text>
+			<Text style={styles.title}>Tab One: {hello}</Text>
 			<View
 				style={styles.separator}
 				lightColor="#eee"

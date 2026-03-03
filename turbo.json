@@ -17,6 +17,9 @@
       "cache": false,
       "persistent": true
     },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+    },
     "test": {
       "dependsOn": ["^test", "@simple.mail/vitest-config#build"]
     },
