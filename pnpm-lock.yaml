@@ -15,6 +15,9 @@ catalogs:
     '@vitest/coverage-v8':
       specifier: 4.0.18
       version: 4.0.18
+    convex:
+      specifier: ^1.31.7
+      version: 1.31.7
     next:
       specifier: ^16.1.6
       version: 16.1.6
@@ -56,12 +59,21 @@ importers:
 
   apps/cli:
     dependencies:
+      '@simple.mail/server':
+        specifier: workspace:*
+        version: link:../../server
       '@simple.mail/tui':
         specifier: workspace:*
         version: link:../tui
       commander:
         specifier: ^14.0.3
         version: 14.0.3
+      convex:
+        specifier: 'catalog:'
+        version: 1.31.7(react@19.2.3)
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
     devDependencies:
       '@simple.mail/eslint-config':
         specifier: workspace:*
@@ -185,6 +197,12 @@ importers:
       '@react-navigation/native':
         specifier: ^7.1.8
         version: 7.1.28(react-native@0.81.5(@babel/core@7.29.0)(@types/react@19.1.17)(react@19.2.3))(react@19.2.3)
+      '@simple.mail/server':
+        specifier: workspace:*
+        version: link:../../server
+      convex:
+        specifier: 'catalog:'
+        version: 1.31.7(react@19.2.3)
       expo:
         specifier: ~54.0.33
         version: 54.0.33(@babel/core@7.29.0)(@expo/metro-runtime@6.1.2)(expo-router@6.0.23)(react-native@0.81.5(@babel/core@7.29.0)(@types/react@19.1.17)(react@19.2.3))(react@19.2.3)
@@ -301,6 +319,15 @@ importers:
 
   apps/tui:
     dependencies:
+      '@simple.mail/server':
+        specifier: workspace:*
+        version: link:../../server
+      convex:
+        specifier: 'catalog:'
+        version: 1.31.7(react@19.2.3)
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
       ink:
         specifier: ^6.7.0
         version: 6.7.0(@types/react@19.1.17)(react-devtools-core@6.1.5)(react@19.2.3)
@@ -475,7 +502,7 @@ importers:
   server:
     dependencies:
       convex:
-        specifier: ^1.31.7
+        specifier: 'catalog:'
         version: 1.31.7(react@19.2.3)
       dotenv:
         specifier: ^17.3.1

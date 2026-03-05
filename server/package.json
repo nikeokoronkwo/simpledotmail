@@ -2,17 +2,27 @@
   "name": "@simple.mail/server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success",
     "test": "vitest",
+    "typecheck": "tsc --noEmit -p convex",
     "coverage": "vitest run --coverage"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./convex/_generated/*": "./convex/_generated/*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.29.3",
   "dependencies": {
-    "convex": "^1.31.7",
+    "convex": "catalog:",
     "dotenv": "^17.3.1"
   },
   "devDependencies": {

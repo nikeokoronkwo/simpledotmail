@@ -12,12 +12,12 @@
       "default": "./dist/index.js"
     },
     "./render": {
-      "types": "./dist/render.d.ts",
-      "default": "./dist/render.js"
+      "types": "./dist/src/render.d.ts",
+      "default": "./dist/src/render.js"
     },
     "./App": {
-      "types": "./dist/App.d.ts",
-      "default": "./dist/App.js"
+      "types": "./dist/src/App.d.ts",
+      "default": "./dist/src/App.js"
     }
   },
   "scripts": {
@@ -38,6 +38,9 @@
     "vitest": "catalog:"
   },
   "dependencies": {
+    "@simple.mail/server": "workspace:*",
+    "convex": "catalog:",
+    "dotenv": "^17.3.1",
     "ink": "^6.7.0",
     "react": "catalog:"
   }

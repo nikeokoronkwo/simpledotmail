@@ -1,5 +1,8 @@
+import { ConvexProvider, ConvexReactClient } from "convex/react";
 import React, { useState, useEffect } from "react";
-import { Text } from "ink";
+import { api } from "@simple.mail/server/convex/_generated/api.js";
+import { useQuery } from "convex/react";
+import IndexPage from "./pages/index.js";
 
 export interface AppProps {
 	/** Initial counter value */
@@ -8,20 +11,16 @@ export interface AppProps {
 	[key: string]: unknown;
 }
 
+const convex = new ConvexReactClient(process.env.EXPO_PUBLIC_CONVEX_URL!, {
+	unsavedChangesWarning: false,
+});
+
 const App = ({ initialCounter = 0 }: AppProps) => {
-	const [counter, setCounter] = useState(initialCounter);
-
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setCounter((previousCounter) => previousCounter + 1);
-		}, 100);
-
-		return () => {
-			clearInterval(timer);
-		};
-	}, []);
-
-	return <Text color="green">{counter} tests passed</Text>;
+	return (
+		<ConvexProvider client={convex}>
+			<IndexPage />
+		</ConvexProvider>
+	);
 };
 
 export default App;
